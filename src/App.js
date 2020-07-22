@@ -6,20 +6,26 @@ import Container from "./container";
 
 function App() {
   const [hideTable, setHideTable] = useState(false);
+  const [changeBackground, setChangeBackground] = useState(false);
 
-  const toggleVisabilityTable = () => {
+  const toggleVisibilityTable = () => {
     setHideTable(hideTable => !hideTable);
   };
 
+  const toggleBackground = () => {
+    setChangeBackground(changeBackground => !changeBackground);
+  }
+
   return (
-    <Container>
+    <Container changeBackground={changeBackground}>
       <Form />
       <Table
         hideTable={hideTable}
       />
       <Buttons
         hideTable={hideTable}
-        toggleVisabilityTable={toggleVisabilityTable}
+        toggleVisibilityTable={toggleVisibilityTable}
+        toggleBackground={toggleBackground}
       />
     </Container>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 import "./style.css";
 
-const Container = ({ children }) => (
-  <main className="main">
+const Container = ({ children, changeBackground }) => (
+  <main className={`main ${changeBackground ? "main--changeColor" : ""}`}>
     {children}
   </main>
 );
