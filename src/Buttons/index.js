@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import "./style.css";
 
-const Buttons = () => (
+const Buttons = ({hideTable, toggleVisabilityTable}) => (
   <Fragment>
-    <button className="button">Ukryj tabelę z kursami wymiany</button>
+    <button onClick={toggleVisabilityTable} className="button">
+      {hideTable ? "Ukryj" : "Pokaż"} tabelę z kursami wymiany
+      </button>
     <button className="button">Zmień tło</button>
   </Fragment>
 );

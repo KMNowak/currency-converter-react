@@ -38,11 +38,8 @@
   background-color: rgb(245, 255, 235);
 }
 
-.js-section__tableContainer--hidden {
+.main__tableContainer--hidden {
   display: none;
 }
 
-.js-section__tableContainer--visible{
-  display: block; 
-}
 
