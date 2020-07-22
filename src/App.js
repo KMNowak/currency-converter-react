@@ -1,17 +1,15 @@
 import React from 'react';
 import Table from "./table";
 import Form from "./form";
+import Buttons from "./Buttons";
 
 function App() {
   return (
-    <div>
-      <main className="main">
-        <Form></Form>
-        <Table></Table>
-        <button className="button">Ukryj tabelę z kursami wymiany</button>
-        <button className="button">Zmień tło</button>
-      </main>
-    </div>
+    <main className="main">
+      <Form></Form>
+      <Table></Table>
+      <Buttons></Buttons>
+    </main>
   );
 }
 
